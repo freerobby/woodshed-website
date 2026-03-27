@@ -271,6 +271,13 @@ section { padding: var(--section-pad); }
 }
 
 /* App screenshot */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .app-screenshot {
   width: 280px;
   border-radius: 36px;
