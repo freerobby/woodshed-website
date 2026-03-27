@@ -14,8 +14,8 @@
   --color-text-sec:    #8A8A8A;
   --color-text-dim:    #555555;
 
-  --font-serif:  'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-sans:   'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif:  Georgia, 'Times New Roman', serif;
+  --font-sans:   -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 
   --radius-sm:   6px;
   --radius-md:   12px;
@@ -97,11 +97,20 @@ section { padding: var(--section-pad); }
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-serif);
   font-size: 22px;
   font-weight: 700;
   color: var(--color-text);
   letter-spacing: -0.01em;
+}
+
+.nav-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
 }
 
 .nav-logo span { color: var(--color-accent); }
@@ -261,138 +270,20 @@ section { padding: var(--section-pad); }
   margin-top: 12px;
 }
 
-/* Phone mock */
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.phone-mock {
-  width: 260px;
-  height: 520px;
-  background: var(--color-surface);
+/* App screenshot */
+.app-screenshot {
+  width: 280px;
   border-radius: 36px;
-  border: 1.5px solid var(--color-border);
-  position: relative;
   box-shadow:
     0 40px 100px rgba(0,0,0,0.7),
-    0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 60px 120px rgba(201, 136, 58, 0.06);
-  overflow: hidden;
+    0 0 0 1px rgba(255,255,255,0.06) inset,
+    0 60px 120px rgba(201, 136, 58, 0.08);
+  position: relative;
+  z-index: 1;
 }
 
-/* Dynamic island */
-.phone-mock::before {
-  content: '';
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 28px;
-  background: var(--color-bg);
-  border-radius: 20px;
-  z-index: 2;
-}
-
-.phone-screen {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 18px 24px;
-  gap: 10px;
-}
-
-.screen-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 4px;
-}
-
-.screen-title {
-  font-family: var(--font-serif);
-  font-size: 20px;
-  color: var(--color-text);
-}
-
-.screen-streak {
-  font-size: 12px;
-  color: var(--color-accent);
-  background: rgba(201,136,58,0.12);
-  padding: 3px 10px;
-  border-radius: 100px;
-}
-
-.segment-card {
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  border-radius: 10px;
-  padding: 10px 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.seg-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: rgba(201,136,58,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  flex-shrink: 0;
-}
-
-.seg-info { flex: 1; min-width: 0; }
-
-.seg-name {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--color-text);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.seg-meta { font-size: 10px; color: var(--color-text-sec); }
-
-.seg-rating {
-  font-size: 10px;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 100px;
-}
-
-.rating-solid    { background: rgba(52,199,89,0.15); color: #34C759; }
-.rating-steady   { background: rgba(0,122,255,0.15); color: #007AFF; }
-.rating-rough    { background: rgba(255,159,10,0.15); color: #FF9F0A; }
-.rating-learning { background: rgba(142,142,147,0.15); color: #8E8E93; }
-
-.record-btn {
-  margin-top: auto;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-gold));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  box-shadow: 0 8px 24px rgba(201,136,58,0.4);
-}
-
-.record-btn::after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--color-bg);
+@media (max-width: 768px) {
+  .app-screenshot { width: 200px; }
 }
 
 /* glow halo behind phone */
