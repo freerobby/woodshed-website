@@ -373,8 +373,8 @@ section { padding: var(--section-pad); }
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   position: relative;
 }
 
@@ -383,13 +383,13 @@ section { padding: var(--section-pad); }
   content: '';
   position: absolute;
   top: 36px;
-  left: calc(16.66% + 16px);
-  right: calc(16.66% + 16px);
+  left: calc(12.5% + 16px);
+  right: calc(12.5% + 16px);
   height: 1px;
   background: linear-gradient(90deg,
     transparent,
-    var(--color-border) 20%,
-    var(--color-border) 80%,
+    var(--color-border) 10%,
+    var(--color-border) 90%,
     transparent);
 }
 
@@ -433,6 +433,25 @@ section { padding: var(--section-pad); }
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.step-auto-badge {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-text-sec);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.step-auto {
+  opacity: 0.75;
 }
 
 .step h3 {
@@ -602,8 +621,8 @@ section { padding: var(--section-pad); }
   .phone-mock { width: 200px; height: 400px; }
 
   .steps {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 
   .steps::before { display: none; }
