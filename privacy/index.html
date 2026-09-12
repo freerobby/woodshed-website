@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for the Woodshed iOS app and getwoodshed.com." />
+  <title>Privacy Policy — Woodshed</title>
+  <link rel="canonical" href="https://getwoodshed.com/privacy" />
+  <link rel="icon" type="image/png" href="../images/icon.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="../">
+      <img src="../images/icon.png" alt="" class="nav-icon" />
+      Woodshed
+    </a>
+    <a class="nav-cta" href="../#notify">Get notified at launch</a>
+  </nav>
+
+  <main class="legal">
+    <div class="container">
+      <p class="section-label">Legal</p>
+      <h1 class="serif">Privacy Policy</h1>
+      <p class="legal-meta">Effective 12 September 2026. This page is the current policy. If we make a material change, we will update this page and the date above.</p>
+
+      <p>This Privacy Policy describes how <strong>Woodshed</strong> (the iOS app with bundle identifier <code>com.woodshed</code>, and the website at getwoodshed.com) handles information. Woodshed is operated by <strong>Robby Grossman</strong>. Contact: <a href="mailto:robby@freerobby.com">robby@freerobby.com</a>.</p>
+
+      <p>It covers the Woodshed iOS app and this website. There is one policy and one public URL: <a href="https://getwoodshed.com/privacy">https://getwoodshed.com/privacy</a>.</p>
+
+      <h2 class="serif">Summary</h2>
+      <ul>
+        <li>Practice sessions, library items, recordings, and songwriting notes live on your device. No account is required.</li>
+        <li>We do not sell personal information.</li>
+        <li>We do not share personal information for cross-context advertising.</li>
+        <li>Cloud services may be utilized to improve the product.</li>
+        <li>Optional diagnostics are on by default and can be turned off in Settings: Sentry (crashes, hangs, MetricKit, error-only session replay) and PostHog (first-party product events only).</li>
+        <li>Woodshed is not directed at children under 13.</li>
+        <li>The app and website are provided with no warranty. Liability is disclaimed to the maximum extent permitted by law.</li>
+      </ul>
+
+      <h2 class="serif">Information that stays on your device</h2>
+      <p>Woodshed is built so your music stays yours. Practice sessions, audio recordings, library items (pieces, ratings, tags, history), songwriting ideas, takes, notes, MIDI you import or record, analysis results, and related files are stored locally on your device. You do not create a Woodshed account. We do not operate a Woodshed login, and we do not receive your recordings or songwriting notes as a condition of using the app.</p>
+      <p>If you use Settings to copy a snapshot of your library to iCloud, that copy goes to <em>your</em> Apple iCloud account under Apple’s terms and privacy policy. That is a user-initiated backup snapshot, not automatic Woodshed-operated sync, and we do not receive the contents of that backup on Woodshed servers.</p>
+      <p>Deleting an item in the app, emptying Recently Deleted, or deleting the app removes local data from that device (subject to any iCloud snapshot you made, device backups you control, and files you exported or shared yourself).</p>
+
+      <h2 class="serif">Information we may collect or receive</h2>
+      <p>We try to keep product content on-device, but we would rather overstate what can be processed than leave a gap. Depending on how you use Woodshed and the website, we and our processors may collect, receive, or infer:</p>
+      <ul>
+        <li><strong>Identifiers and technical data:</strong> IP address, approximate location derived from IP, device type and model, operating system and version, app version, language, time zone, anonymous install or distinct identifiers created by diagnostic SDKs, user agent, referrer, and request timestamps.</li>
+        <li><strong>Crash and diagnostic data (Sentry, if Crash reports is on):</strong> crash reports, stack traces, hang reports, MetricKit payloads, breadcrumbs, device and app state around a failure, and error-only session replay. Session replay is sampled only around errors (not as a product-analytics recording of your practice). We configure Sentry to mask text and images; a replay can still include a visual snapshot of the user interface around a crash. We do not use Sentry as product analytics.</li>
+        <li><strong>Product events (PostHog, if Usage analytics is on):</strong> named screen views and a closed list of first-party events such as that a recording started or finished, analysis succeeded or failed, a piece or idea was created, a rating was set, inbox or share import happened, backup or restore succeeded or failed, or onboarding completed. Events may include coarse buckets (for example duration or count ranges) and non-content properties such as a source label. We do not send piece names, idea names, recordings, MIDI, file paths, emails, or raw user-content identifiers. We do not autocapture taps, we do not call identify(), we do not use PostHog error tracking, and we do not use PostHog session replay.</li>
+        <li><strong>Website and email:</strong> if you type an email on getwoodshed.com to be notified at launch, that address and related form metadata are processed so we can email you about launch. If you email us, we will have your address and the contents of the message.</li>
+        <li><strong>Permissions and local device use:</strong> the app may request microphone access (to record practice), notification permission (local alerts), and Bluetooth (to pair a MIDI keyboard). Those features run on your device. Recordings and MIDI are not uploaded to Woodshed as product content. Diagnostic tools, if enabled, may still receive technical data as described above, including a masked UI replay around an error.</li>
+        <li><strong>Logs and hosting:</strong> the website is hosted on GitHub Pages. GitHub, Formspree (the launch-email form), Sentry, PostHog, and Apple (App Store, iCloud, iOS, MetricKit) may process technical data, including IP addresses and device information, under their own policies. We may also see aggregated or individual diagnostic records in those vendors’ dashboards.</li>
+      </ul>
+      <p>Cloud services may be utilized to improve the product. That includes the processors named in this policy and other infrastructure we may use to operate, secure, debug, or improve Woodshed. If a later change is material, we will update this page and its date.</p>
+
+      <h2 class="serif">Optional diagnostics (default on)</h2>
+      <p>Settings contains two independent toggles. Both default to on. Turning either off is free and takes effect immediately.</p>
+      <ul>
+        <li><strong>Crash reports — Sentry.</strong> Used for crashes, hangs, MetricKit, and error-only session replay. Not product analytics.</li>
+        <li><strong>Usage analytics — PostHog.</strong> First-party product events only. No autocapture, no identify, no PostHog error tracking, no PostHog session replay.</li>
+      </ul>
+      <p>PostHog is configured against PostHog’s US Cloud host. Sentry events go to Sentry’s service for our project. Empty keys in a given build mean that backend is a no-op. UI tests do not send telemetry.</p>
+
+      <h2 class="serif">How we use information</h2>
+      <p>We use information to operate Woodshed, fix crashes and hangs, understand which screens and actions are used so we can improve the product, send launch email if you asked for it, respond if you contact us, and meet legal obligations. We do not use personal information to build a cross-app advertising profile, and we do not sell it.</p>
+
+      <h2 class="serif">Sale, sharing, and advertising</h2>
+      <p>We do not sell personal information. We do not share personal information for cross-context behavioral advertising. We do not use your recordings, library, or songwriting notes for advertising. Processors listed here receive data only to provide their service to us (diagnostics, hosting, email delivery, or Apple platform services).</p>
+
+      <h2 class="serif">Retention</h2>
+      <p>Local app data lasts until you delete it or delete the app (and any copies you made, including iCloud snapshots and device backups you control). Vendor diagnostic data follows Sentry’s and PostHog’s retention for our accounts, which those vendors control and which may change. Launch-list email is kept until you ask us to remove it or we stop the list. Email you send us is kept as long as needed to respond and for ordinary records.</p>
+
+      <h2 class="serif">Children</h2>
+      <p>Woodshed is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided personal information, contact <a href="mailto:robby@freerobby.com">robby@freerobby.com</a> and we will delete it from systems we control.</p>
+
+      <h2 class="serif">Your choices</h2>
+      <ul>
+        <li>Turn off Crash reports and/or Usage analytics in Settings. Each toggle is independent.</li>
+        <li>Do not submit your email on the website if you do not want us to have it.</li>
+        <li>Delete local data in the app, or delete the app.</li>
+        <li>Email <a href="mailto:robby@freerobby.com">robby@freerobby.com</a> to ask us to delete launch-list email or to ask what diagnostic records we can locate and delete from Sentry or PostHog. We may not be able to reverse Apple-held iCloud or device backups you control.</li>
+      </ul>
+
+      <h2 class="serif">Security</h2>
+      <p>We take reasonable administrative and technical steps to protect information, including keeping product content on-device by default and limiting telemetry to the categories above. No method of electronic storage or transmission is completely secure. You are responsible for the physical security of your device and for any iCloud or export copies you make.</p>
+
+      <h2 class="serif">International processing</h2>
+      <p>Woodshed is operated from the United States. Sentry, PostHog (US Cloud), GitHub, Formspree, and Apple may process data in the United States and other countries. If you use Woodshed from elsewhere, you understand that information may be processed outside your country, including in places that may have different data-protection rules.</p>
+
+      <h2 class="serif">Changes</h2>
+      <p>If we make a material change to this policy, we will update this public page and the effective date on it. Continued use of the app or website after that date means you are using the product under the updated policy. Please check this URL when you need the current text; the app opens this same page rather than shipping a second copy of the legal language.</p>
+
+      <h2 class="serif">No warranty; limitation of liability</h2>
+      <p>THE WOODSHED APP, THIS WEBSITE, AND ALL RELATED CONTENT AND SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ROBBY GROSSMAN AND WOODSHED DISCLAIM ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, ACCURACY, AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING FROM COURSE OF DEALING OR USAGE OF TRADE. WE DO NOT WARRANT THAT THE APP OR WEBSITE WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF HARMFUL COMPONENTS, THAT RECORDINGS OR ANALYSIS WILL BE COMPLETE OR CORRECT, OR THAT DATA WILL NOT BE LOST.</p>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ROBBY GROSSMAN AND WOODSHED SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR LOST-PROFITS DAMAGES, OR FOR ANY LOSS OF DATA, RECORDINGS, GOODWILL, OR PRACTICE TIME, WHETHER BASED IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, TOTAL LIABILITY FOR ALL CLAIMS RELATING TO WOODSHED OR THIS WEBSITE SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID TO US FOR WOODSHED IN THE TWELVE MONTHS BEFORE THE CLAIM OR (B) TEN U.S. DOLLARS (US$10). SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS; IN THOSE PLACES, OUR LIABILITY IS LIMITED TO THE GREATEST EXTENT THE LAW ALLOWS. THIS POLICY DOES NOT LIMIT LIABILITY THAT CANNOT BE LIMITED UNDER APPLICABLE LAW, INCLUDING LIABILITY FOR DEATH OR PERSONAL INJURY CAUSED BY NEGLIGENCE WHERE SUCH A LIMIT IS PROHIBITED.</p>
+
+      <h2 class="serif">Contact</h2>
+      <p>Questions about this policy or Woodshed’s privacy practices: <a href="mailto:robby@freerobby.com">robby@freerobby.com</a>. Operator: Robby Grossman.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-logo">Woodshed</div>
+    <p class="footer-copy">Woodshed &copy; 2026 Robby Grossman</p>
+    <div class="footer-links">
+      <a href="./">Privacy Policy</a>
+      <a href="mailto:robby@freerobby.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

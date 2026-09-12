@@ -12,7 +12,9 @@ Plain HTML5 + CSS. No build step, no framework, no dependencies other than Googl
 
 ```
 woodshed-website/
-├── index.html        ← single-page site
+├── index.html        ← marketing homepage
+├── privacy/
+│   └── index.html    ← Privacy Policy (https://getwoodshed.com/privacy)
 ├── css/
 │   └── style.css     ← all styles, CSS variables for color palette
 └── README.md
