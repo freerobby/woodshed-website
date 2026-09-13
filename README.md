@@ -46,20 +46,26 @@ The homepage has one Formspree form (`https://formspree.io/f/xeepeaja`) in the l
 
 ## Screenshots
 
-Native captures live in `images/`:
+Native captures live in `images/`. The app repo maps which UI change
+recaptures which file (`.cursor/skills/marketing-site/SKILL.md` in
+`freerobby/woodshed`). Keep these filenames — `index.html` points at them.
 
-| File | Screen |
-|------|--------|
-| `practice.png` | Practice tab (hero) |
-| `recording.png` | Recording a session |
-| `write.png` | Write tab |
-| `idea.png` | Idea detail with takes |
-| `session.png` | Session review |
-| `library.png` | Library |
-| `piece.png` | Piece detail |
-| `og.png` | Open Graph / social share card (1200×630) |
+| File | Screen | Recapture when |
+|------|--------|----------------|
+| `practice.png` | Practice tab, idle record (hero) | Practice chrome, record button, tab bar, empty state |
+| `recording.png` | Practice while recording | Recording UI |
+| `write.png` | Write tab | Write list, best-take badges |
+| `idea.png` | Idea detail | Idea detail, takes, tags |
+| `session.png` | Session review | Segments, match chips, ratings |
+| `piece.png` | Piece detail | Piece stats, progress, session history |
+| `library.png` | Library | Library rows, filters, pieces vs ideas |
+| `og.png` | Open Graph card (1200×630) | App icon or homepage tagline only |
 
-Recapture from the native Simulator when the app UI changes. Demo library on these shots: modern jazz standards and well-known classical pieces.
+Hero and recording should be a quiet empty Practice. Weekly-goal chips
+are opt-in and off by default — reset the Simulator so they stay hidden.
+On Simulator: `-WoodshedSkipOnboarding`. Demo library: jazz standards,
+well-known classical pieces, a few named song ideas. Recapture on
+woodshed-mac (iPhone 17 Simulator).
 
 ---
 
