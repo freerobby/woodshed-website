@@ -64,8 +64,11 @@ recaptures which file (`.cursor/skills/marketing-site/SKILL.md` in
 Hero and recording should be a quiet empty Practice. Weekly-goal chips
 are opt-in and off by default — reset the Simulator so they stay hidden.
 On Simulator: `-WoodshedSkipOnboarding`. Demo library: jazz standards,
-well-known classical pieces, a few named song ideas. Recapture on
-woodshed-mac (iPhone 17 Simulator).
+well-known classical pieces, a few named song ideas.
+
+Linux cloud agents do not recapture. They list owed files in the app repo
+(`marketing/screenshots-stale.md`). Recapture on woodshed-mac (iPhone 17
+Simulator) when that session already exists (usually TestFlight).
 
 ---
 
