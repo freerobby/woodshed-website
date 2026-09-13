@@ -382,22 +382,10 @@ a.nav-logo:hover { color: var(--color-text); }
 
 .how-it-works .container { text-align: center; }
 
-.how-title {
-  font-size: clamp(32px, 4vw, 48px);
-  margin-bottom: 56px;
-}
+.how-it-works .section-label { margin-bottom: 48px; }
 
 .how-block { margin-bottom: 64px; }
 .how-block:last-child { margin-bottom: 0; }
-
-.how-kicker {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: 10px;
-}
 
 .how-lead {
   font-family: var(--font-serif);
