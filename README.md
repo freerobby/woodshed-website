@@ -53,9 +53,11 @@ Native captures live in `images/`:
 | `practice.png` | Practice tab (hero) |
 | `recording.png` | Recording a session |
 | `write.png` | Write tab |
+| `idea.png` | Idea detail with takes |
 | `session.png` | Session review |
 | `library.png` | Library |
 | `piece.png` | Piece detail |
+| `og.png` | Open Graph / social share card (1200×630) |
 
 Recapture from the native Simulator when the app UI changes. Demo library on these shots: modern jazz standards and well-known classical pieces.
 
