@@ -81,7 +81,7 @@
             <span class="step-num-badge">1</span>
           </div>
           <h3 class="serif">Record</h3>
-          <p>Tap once and play. No need to touch your phone again until you're done playing.</p>
+          <p>Tap once and play. No need to touch your phone again until you’re done playing.</p>
         </div>
         <div class="step fade-up" style="transition-delay:0.08s">
           <div class="step-number">
@@ -224,7 +224,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
           </div>
           <h3>Your device, your data</h3>
-          <p>Recordings and library live on your phone. No Woodshed account. Copy a snapshot to your iCloud when you want — this is not automatic sync.</p>
+          <p>Recordings and library live on your phone. No Woodshed account. Settings can copy a snapshot to iCloud when you want one — the live library is not synced automatically.</p>
         </article>
 
       </div>
@@ -261,25 +261,6 @@
     </div>
   </footer>
 
-
-  <script>
-    (function () {
-      const els = document.querySelectorAll('.fade-up');
-      if (!('IntersectionObserver' in window)) {
-        els.forEach(el => el.classList.add('visible'));
-        return;
-      }
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            observer.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      els.forEach(el => observer.observe(el));
-    })();
-  </script>
 
 </body>
 </html>

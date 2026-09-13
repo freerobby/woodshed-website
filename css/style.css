@@ -89,9 +89,7 @@ section { padding: var(--section-pad); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(9, 9, 9, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--color-bg);
   border-bottom: 1px solid rgba(255,255,255,0.04);
 }
 
@@ -707,8 +705,12 @@ a.nav-logo:hover { color: var(--color-text); }
 @media (max-width: 768px) {
   :root { --section-pad: 72px 20px; }
 
-  .site-nav { padding: 16px 20px; }
-  .nav-cta { display: none; }
+  .site-nav { padding: 16px 16px 16px 16px; gap: 12px; }
+  .nav-cta {
+    font-size: 12px;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
 
   .hero { padding: 100px 20px 64px; }
 
@@ -772,16 +774,9 @@ a.nav-logo:hover { color: var(--color-text); }
 @media (max-width: 480px) {
   .email-section .email-form { flex-direction: column; }
   .rating-scale { font-size: 13px; }
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .fade-up {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .fade-up.visible {
-    opacity: 1;
-    transform: none;
-  }
-}
