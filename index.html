@@ -3,216 +3,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Woodshed tracks your practice so you can focus on playing. One tap to record. Automatic analysis. Real progress data." />
-  <title>Woodshed — The Practice Maximizer for Musicians</title>
-
+  <meta name="description" content="Woodshed helps you practice more effectively, and capture song ideas in the moment you have them. Coming to the App Store." />
+  <meta name="theme-color" content="#090909" />
+  <title>Woodshed — Hear yourself improve.</title>
+  <link rel="canonical" href="https://getwoodshed.com/" />
   <link rel="icon" type="image/png" href="images/icon.png" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════
-       NAV
-  ═══════════════════════════════════════════ -->
   <nav class="site-nav">
     <a class="nav-logo" href="#top">
-    <img src="images/icon.png" alt="Woodshed" class="nav-icon" />
-    Woodshed
-  </a>
+      <img src="images/icon.png" alt="" class="nav-icon" />
+      Woodshed
+    </a>
     <a class="nav-cta" href="#notify">Get notified at launch</a>
   </nav>
 
 
-  <!-- ═══════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════ -->
   <section class="hero" id="top">
     <div class="hero-inner">
-
-      <!-- Copy -->
       <div class="hero-copy">
         <div class="hero-badge">
           <span class="hero-badge-dot"></span>
           Coming to the App Store
         </div>
-
         <h1 class="hero-title serif">
-          Hear<br />yourself <em>improve.</em>
+          Hear yourself <em>improve.</em>
         </h1>
-
         <p class="hero-tagline">
-          Woodshed listens to you practice and <br />
-          helps you hear and accelerate your improvement.
+          Woodshed helps you practice more effectively, and capture song ideas in the moment you have them.
         </p>
-
-        <form class="email-form" action="https://formspree.io/f/xeepeaja" method="post" id="hero-form">
-          <input
-            type="email"
-            name="email"
-            placeholder="your@email.com"
-            required
-            autocomplete="email"
-            aria-label="Email address"
-          />
-          <button type="submit" class="btn-primary">Notify me at launch</button>
-        </form>
-        <p class="form-note">No spam. One email from our creator when we launch.</p>
       </div>
-
-      <!-- App screenshot -->
       <div class="hero-visual">
         <div class="phone-glow"></div>
-        <img src="images/screen_home.png" alt="Woodshed home screen" class="app-screenshot" />
+        <img src="images/practice.png" alt="Woodshed Practice tab — record, streak, and recent sessions" class="app-screenshot" />
       </div>
-
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════
-       SCREENSHOTS
-  ═══════════════════════════════════════════ -->
+  <section class="rooms" id="rooms">
+    <article class="room room-practice">
+      <p class="section-label">Practice</p>
+      <h2 class="serif">The room where you put in the work.</h2>
+      <p class="room-lead">Scales, repeats, the gruntwork that makes a piece take shape. Woodshed gets out of the way while you play, then catalogs the session so you can hear it later.</p>
+      <figure>
+        <img src="images/recording.png" alt="Woodshed recording a practice session" class="screenshot-img" />
+        <figcaption>Recording — tap once, then play.</figcaption>
+      </figure>
+    </article>
+    <article class="room room-write">
+      <p class="section-label">Write</p>
+      <h2 class="serif">The room where a song starts.</h2>
+      <p class="room-lead">A line shows up. Name it, record takes, jot a quick note. Just enough structure to shape an idea into a song. Once it’s fleshed out, you can practice it like any other piece.</p>
+      <figure>
+        <img src="images/write.png" alt="Woodshed Write tab — ideas, takes, and a best take" class="screenshot-img" />
+        <figcaption>Write — ideas, takes, and a best take.</figcaption>
+      </figure>
+    </article>
+  </section>
+
+
+  <section class="how-it-works" id="how">
+    <div class="container">
+      <p class="section-label">How it works</p>
+      <h2 class="how-title serif">Woodshed helps you track and see your progress.</h2>
+      <div class="steps">
+        <div class="step fade-up">
+          <div class="step-number">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+            </span>
+            <span class="step-num-badge">1</span>
+          </div>
+          <h3 class="serif">Record</h3>
+          <p>Tap once and play. No need to touch your phone again until you're done playing.</p>
+        </div>
+        <div class="step fade-up" style="transition-delay:0.08s">
+          <div class="step-number">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+            </span>
+            <span class="step-num-badge">2</span>
+          </div>
+          <h3 class="serif">Woodshed splits</h3>
+          <p>Your session is segmented and fingerprinted; app suggests matches to earlier performances.</p>
+        </div>
+        <div class="step fade-up" style="transition-delay:0.16s">
+          <div class="step-number">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            </span>
+            <span class="step-num-badge">3</span>
+          </div>
+          <h3 class="serif">Listen &amp; rate</h3>
+          <p>Listen to and rate your performances on the five-level scale. Determine what you need to work on.</p>
+        </div>
+        <div class="step fade-up" style="transition-delay:0.24s">
+          <div class="step-number">
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </span>
+            <span class="step-num-badge">4</span>
+          </div>
+          <h3 class="serif">Hear the difference</h3>
+          <p>Open a piece and listen across weeks as your ratings climb.</p>
+        </div>
+      </div>
+      <div class="rating-scale" aria-label="Readiness scale">
+        <span class="rating learning">Learning</span>
+        <span class="rating-arrow" aria-hidden="true">→</span>
+        <span class="rating rough">Rough</span>
+        <span class="rating-arrow" aria-hidden="true">→</span>
+        <span class="rating steady">Steady</span>
+        <span class="rating-arrow" aria-hidden="true">→</span>
+        <span class="rating solid">Solid</span>
+        <span class="rating-arrow" aria-hidden="true">→</span>
+        <span class="rating ready">Performance-ready</span>
+      </div>
+    </div>
+  </section>
+
+
   <section class="screenshots" id="screenshots">
     <div class="container">
       <p class="section-label">The app</p>
       <h2 class="screenshots-title serif">See it in action.</h2>
       <div class="screenshots-grid">
         <div class="screenshot-item fade-up">
-          <img src="images/screen_home.png" alt="Woodshed home screen" class="screenshot-img" />
-          <p class="screenshot-caption">Home — your sessions, practice streak, and goals.</p>
+          <img src="images/session.png" alt="Session review — segments, match suggestions, and ratings" class="screenshot-img" />
+          <p class="screenshot-caption">A session, already split into what you played. Match suggestions, never auto-assigned.</p>
         </div>
         <div class="screenshot-item fade-up" style="transition-delay:0.1s">
-          <img src="images/screen_recording.png" alt="Recording in progress" class="screenshot-img" />
-          <p class="screenshot-caption">Recording — tap once, then forget about it until you're done playing.</p>
+          <img src="images/library.png" alt="Library — pieces and ideas together" class="screenshot-img" />
+          <p class="screenshot-caption">Library — pieces and ideas, ratings, tags, last played.</p>
         </div>
         <div class="screenshot-item fade-up" style="transition-delay:0.2s">
-          <img src="images/screen_library.png" alt="Your piece library" class="screenshot-img" />
-          <p class="screenshot-caption">Library — everything you've practiced, with history and recent ratings.</p>
+          <img src="images/piece.png" alt="Piece progress over time" class="screenshot-img" />
+          <p class="screenshot-caption">A piece — ratings session by session, from Learning to Performance-ready.</p>
         </div>
         <div class="screenshot-item fade-up" style="transition-delay:0.3s">
-          <img src="images/screen_progress.png" alt="Piece progress over time" class="screenshot-img" />
-          <p class="screenshot-caption">Progress — watch your ratings improve, session by session, from Rough to Performance-Ready.</p>
+          <img src="images/write.png" alt="Write tab with ideas and best takes" class="screenshot-img" />
+          <p class="screenshot-caption">Write — capture an idea, keep takes, mark a best one.</p>
         </div>
-      </div>    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════
-       HOW IT WORKS
-  ═══════════════════════════════════════════ -->
-  <section class="how-it-works" id="how">
-    <div class="container">
-      <p class="section-label">How it works</p>
-      <h2 class="how-title serif">Practice more effectively.</h2>
-
-      <div class="steps">
-
-        <div class="step fade-up">
-          <div class="step-number">
-            <span class="step-icon">🎙️</span>
-            <span class="step-num-badge">1</span>
-          </div>
-          <h3 class="serif">Record</h3>
-          <p>Tap once to start. Woodshed listens while you play. No need to touch your phone again until you're done playing.</p>
-        </div>
-
-        <div class="step fade-up" style="transition-delay: 0.1s">
-          <div class="step-number step-auto">
-            <span class="step-icon">🔬</span>
-            <span class="step-auto-badge">Automatic!</span>
-          </div>
-          <h3 class="serif">Analyze</h3>
-          <p>Woodshed detects the individual pieces you play, fingerprints them, and (over time) matches new and old performances of the same piece.</p>
-        </div>
-
-        <div class="step fade-up" style="transition-delay: 0.2s">
-          <div class="step-number">
-            <span class="step-icon">⭐</span>
-            <span class="step-num-badge">3</span>
-          </div>
-          <h3 class="serif">Assess</h3>
-          <p>Listen to your practice session to reflect on what you're doing well and what needs work. Rate what you play.</p>
-        </div>
-
-        <div class="step fade-up" style="transition-delay: 0.3s">
-          <div class="step-number">
-            <span class="step-icon">📈</span>
-            <span class="step-num-badge">4</span>
-          </div>
-          <h3 class="serif">Hear your progress</h3>
-          <p>Track how each piece improves over time. Watch ratings climb from Rough to Performance-ready.</p>
-        </div>
-
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════
-       FEATURES
-  ═══════════════════════════════════════════ -->
   <section class="features" id="features">
     <div class="container">
-      <p class="section-label">Features</p>
-      <h2 class="features-title serif">Everything you need.<br />Nothing you don't.</h2>
-      <p class="features-sub">Built for serious musicians who want improvement, not distractions.</p>
+      <p class="section-label">Standout features</p>
+      <h2 class="features-title serif">Built to help, not distract.</h2>
+      <p class="features-sub">The functions of the app, not a dashboard you babysit while you play.</p>
 
       <div class="features-grid">
 
-        <div class="feature-card fade-up">
-          <div class="feature-icon">🎶</div>
-          <h3>Focus on the Music</h3>
-          <p>Everything in Woodshed orients around your music. It enables quicker and more effective listening and analysis, without creating any distractions while you're playing.</p>
-        </div>
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+          </div>
+          <h3>One-tap recording</h3>
+          <p>Tap Record and put the phone down. Microphone or MIDI keyboard. Nothing flashes, counts, or nags until you stop.</p>
+        </article>
 
-        <div class="feature-card fade-up">
-          <div class="feature-icon">✂️</div>
-          <h3>Auto-segmentation</h3>
-          <p>Woodshed automatically breaks your practice session into individual pieces and exercises, so you can easily play back and revisit the parts that need your attention. You can tune this to your personal playing habits.</p>
-        </div>
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+          </div>
+          <h3>Automatic piece detection</h3>
+          <p>When you stop, it splits your session into the pieces and exercises you actually played. Tune detection to how you practice.</p>
+        </article>
 
-        <div class="feature-card fade-up">
-          <div class="feature-icon">🫆</div>
-          <h3>Performance fingerprinting</h3>
-          <p>Woodshed learns what you play and helps you link all your performances of the same piece, so you can track your progress and hear your improvement, on a piece-specific basis, with minimal effort.</p>
-        </div>
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/><path d="M14 13.12c0 2.38 0 6.38-1 8.88"/><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"/><path d="M2 12a10 10 0 0 1 18-6"/><path d="M2 16h.01"/><path d="M21.8 16c.2-2 .131-5.354 0-6"/><path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"/><path d="M8.65 22c.21-.66.45-1.32.57-2"/><path d="M9 6.8a6 6 0 0 1 9 5.2v2"/></svg>
+          </div>
+          <h3>Centered on what you play</h3>
+          <p>Each performance is fingerprinted. The app suggests matches to earlier performances of the same music, so progress is tied to the piece — not a pile of recordings.</p>
+        </article>
 
-        <div class="feature-card fade-up">
-          <div class="feature-icon">⭐</div>
-          <h3>Self-rating system</h3>
-          <p>Five levels: Learning → Rough → Steady → Solid → Performance-ready. Set goals for yourself, rate your playing as you go, and hear your progress over time.</p>
-        </div>
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          </div>
+          <h3>Rate it. Hear the change.</h3>
+          <p>Five levels: Learning, Rough, Steady, Solid, Performance-ready. Rate as you go, then listen back across weeks.</p>
+        </article>
 
-        <div class="feature-card fade-up">
-          <div class="feature-icon">🙌</div>
-          <h3>Personal Goals</h3>
-          <p>Daily streaks, weekly targets, performance-ready pieces -- Woodshed tracks it all so you can set and measure any goal you want.</p>
-        </div>
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+          </div>
+          <h3>Ideas, takes, a best take</h3>
+          <p>Name an idea, record takes, and keep your best version handy. Just enough structure to shape a song — not a DAW, not a voice-memo pile.</p>
+        </article>
 
-        <div class="feature-card fade-up">
-          <div class="feature-icon">☁️</div>
-          <h3>Data portability</h3>
-          <p>Your practice history (including raw audio files) syncs to iCloud, so it's safe and fully yours.</p>
-        </div>
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15V6"/><path d="M18.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path d="M12 12H3"/><path d="M16 6H3"/><path d="M12 18H3"/></svg>
+          </div>
+          <h3>One library</h3>
+          <p>All your work, organized together: ideas, pieces, ratings, tags, and notes.</p>
+        </article>
+
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 8h.01"/><path d="M12 12h.01"/><path d="M14 8h.01"/><path d="M16 12h.01"/><path d="M18 8h.01"/><path d="M6 8h.01"/><path d="M7 16h10"/><path d="M8 12h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg>
+          </div>
+          <h3>Mic or MIDI</h3>
+          <p>Acoustic instruments through the mic, digital keyboards over MIDI. Same recording, same library, same matching.</p>
+        </article>
+
+        <article class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+          </div>
+          <h3>Your device, your data</h3>
+          <p>Recordings and library live on your phone. No Woodshed account. Copy a snapshot to your iCloud when you want — this is not automatic sync.</p>
+        </article>
 
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════
-       EMAIL CAPTURE
-  ═══════════════════════════════════════════ -->
   <section class="email-section" id="notify">
     <div class="container">
-      <p class="section-label">Stay in the loop</p>
-      <h2 class="serif">Be first to know<br />when we launch.</h2>
-      <p class="lead">
-        Woodshed is currently in private beta.<br />
-        Drop your email and we'll tell you when it hits the App Store.
-      </p>
-
+      <h2 class="serif">Notify me at launch.</h2>
+      <p class="lead">No spam. One email when we launch.</p>
       <form class="email-form" action="https://formspree.io/f/xeepeaja" method="post" id="notify-form">
         <input
           type="email"
@@ -225,14 +248,10 @@
         />
         <button type="submit" class="btn-primary">Notify me at launch</button>
       </form>
-      <p class="form-note">No spam. One email from our creator when we launch.</p>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════ -->
   <footer class="site-footer">
     <div class="footer-logo">Woodshed</div>
     <p class="footer-copy">Woodshed &copy; 2026 Robby Grossman</p>
@@ -243,9 +262,6 @@
   </footer>
 
 
-  <!-- ═══════════════════════════════════════════
-       JS — scroll reveal
-  ═══════════════════════════════════════════ -->
   <script>
     (function () {
       const els = document.querySelectorAll('.fade-up');
