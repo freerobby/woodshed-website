@@ -1,0 +1,8 @@
+/* Flutter SegmentRating palette (overrides style.css). */
+:root {
+  --rating-learning: #E57373;
+  --rating-rough:    #FFB74D;
+  --rating-steady:   #FFF176;
+  --rating-solid:    #81C784;
+  --rating-ready:    #9B59B6;
+}
