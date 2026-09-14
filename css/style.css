@@ -27,11 +27,11 @@
   --max-w:       1100px;
   --section-pad: 100px 24px;
 
-  --rating-learning: #BF5952;
-  --rating-rough:    #D98547;
-  --rating-steady:   #E8A84C;
-  --rating-solid:    #73B86B;
-  --rating-ready:    #59AD9E;
+  --rating-learning: #E57373;
+  --rating-rough:    #FFB74D;
+  --rating-steady:   #FFF176;
+  --rating-solid:    #81C784;
+  --rating-ready:    #9B59B6;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -832,4 +832,3 @@ a.nav-logo:hover { color: var(--color-text); }
     gap: 40px;
   }
 }
-
