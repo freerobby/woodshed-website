@@ -17,8 +17,8 @@
   --color-ink:         #1C1916;
   --color-ink-muted:   rgba(28, 25, 22, 0.68);
 
-  --font-serif:  \u0022Instrument Serif\u0022, Georgia, \u0022Times New Roman\u0022, serif;
-  --font-sans:   \u0022Instrument Sans\u0022, -apple-system, BlinkMacSystemFont, \u0022Helvetica Neue\u0022, Arial, sans-serif;
+  --font-serif:  "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-sans:   "Instrument Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
   --radius-sm:   6px;
   --radius-md:   12px;
@@ -78,9 +78,9 @@ h1, h2, h3 {
 
 section { padding: var(--section-pad); }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    NAV
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .site-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -128,9 +128,9 @@ a.nav-logo:hover { color: var(--color-text); }
   transform: translateY(-1px);
 }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    HERO
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -257,9 +257,9 @@ a.nav-logo:hover { color: var(--color-text); }
   border-top: 1px solid var(--color-border);
 }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    TWO ROOMS
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .rooms {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -330,9 +330,9 @@ a.nav-logo:hover { color: var(--color-text); }
 .room-write .room-lead,
 .room-write figcaption { color: var(--color-ink-muted); }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    SCREENSHOTS
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .screenshots .container { text-align: center; }
 
 .screenshots-title {
@@ -371,9 +371,9 @@ a.nav-logo:hover { color: var(--color-text); }
     0 0 0 1px rgba(28, 25, 22, 0.08) inset;
 }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    HOW IT WORKS
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .how-it-works {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
@@ -509,9 +509,9 @@ a.nav-logo:hover { color: var(--color-text); }
 .rating.solid { color: var(--rating-solid); }
 .rating.ready { color: var(--rating-ready); }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    FEATURES
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .features .container { text-align: center; }
 
 .features-title {
@@ -570,16 +570,16 @@ a.nav-logo:hover { color: var(--color-text); }
   line-height: 1.6;
 }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    EMAIL CAPTURE
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .email-form {
   display: flex;
   gap: 10px;
   max-width: 440px;
 }
 
-.email-form input[type=\u0022email\u0022] {
+.email-form input[type="email"] {
   flex: 1;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -592,8 +592,8 @@ a.nav-logo:hover { color: var(--color-text); }
   font-family: var(--font-sans);
 }
 
-.email-form input[type=\u0022email\u0022]::placeholder { color: var(--color-text-dim); }
-.email-form input[type=\u0022email\u0022]:focus { border-color: var(--color-accent); }
+.email-form input[type="email"]::placeholder { color: var(--color-text-dim); }
+.email-form input[type="email"]:focus { border-color: var(--color-accent); }
 
 .btn-primary {
   background: var(--color-accent);
@@ -641,9 +641,9 @@ a.nav-logo:hover { color: var(--color-text); }
   margin: 0 auto;
 }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    FOOTER
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .site-footer {
   padding: 40px 24px;
   display: flex;
@@ -677,9 +677,9 @@ a.nav-logo:hover { color: var(--color-text); }
 
 .footer-links a:hover { color: var(--color-text-sec); }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    LEGAL / PRIVACY
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .legal {
   padding: 140px 24px 80px;
 }
@@ -731,9 +731,9 @@ a.nav-logo:hover { color: var(--color-text); }
   margin-bottom: 32px;
 }
 
-/* ═════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    RESPONSIVE
-═════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 @media (max-width: 900px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
