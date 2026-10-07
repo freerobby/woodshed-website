@@ -30,8 +30,8 @@
   --rating-learning: #E57373;
   --rating-rough:    #FFB74D;
   --rating-steady:   #FFF176;
-  --rating-solid:    #81C784;
-  --rating-ready:    #9B59B6;
+  --rating-ready:    #81C784;
+  --rating-mastered: #9B59B6;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -506,8 +506,8 @@ a.nav-logo:hover { color: var(--color-text); }
 .rating.learning { color: var(--rating-learning); }
 .rating.rough { color: var(--rating-rough); }
 .rating.steady { color: var(--rating-steady); }
-.rating.solid { color: var(--rating-solid); }
 .rating.ready { color: var(--rating-ready); }
+.rating.mastered { color: var(--rating-mastered); }
 
 /* ══════════════════════════════════════════════════════════
    FEATURES
