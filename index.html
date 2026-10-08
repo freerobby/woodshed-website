@@ -25,11 +25,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" />
+  <link rel="preload" as="image" href="images/room.jpg" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <nav class="site-nav">
+  <nav class="site-nav nav-over-photo">
     <a class="nav-logo" href="#top">
       <img src="images/icon.png" alt="" class="nav-icon" />
       Woodshed
@@ -39,6 +40,8 @@
 
 
   <section class="hero" id="top">
+    <img class="hero-photo" src="images/room.jpg" alt="" />
+    <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="hero-badge">
@@ -280,6 +283,17 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var nav = document.querySelector(".nav-over-photo");
+      if (!nav) return;
+      var update = function () {
+        nav.classList.toggle("is-solid", window.scrollY > 12);
+      };
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+    })();
+  </script>
 
 </body>
 </html>
