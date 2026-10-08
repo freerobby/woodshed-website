@@ -178,15 +178,15 @@ a.nav-logo:hover { color: var(--color-text); }
     #090909 100%);
 }
 
-/* Wide, roughly landscape windows: the whole photograph sits behind the
-   headline and stays put while the rest of the page scrolls over it. */
-@media (min-width: 960px) and (min-aspect-ratio: 3/2) {
+/* From a laptop width up: the headline sits in the photograph, which
+   stays put while the rest of the page scrolls over it. */
+@media (min-width: 990px) {
   .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
     min-height: 100svh;
-    padding: 120px 24px 80px;
+    padding: 0;
     overflow: visible;
   }
 
@@ -213,7 +213,6 @@ a.nav-logo:hover { color: var(--color-text); }
         #090909 100%);
   }
 
-  .hero-inner { padding: 0; }
 }
 
 .hero-inner {
@@ -229,8 +228,13 @@ a.nav-logo:hover { color: var(--color-text); }
   padding: 36px 32px 0;
 }
 
-@media (min-width: 960px) and (min-aspect-ratio: 3/2) {
-  .hero-inner { padding: 0; }
+@media (min-width: 990px) {
+  .hero-inner {
+    height: min(100vh, calc(100vw * 1008 / 1792));
+    height: min(100svh, calc(100vw * 1008 / 1792));
+    padding: 88px 32px 40px;
+    box-sizing: border-box;
+  }
 }
 
 .hero-badge {
@@ -302,6 +306,10 @@ a.nav-logo:hover { color: var(--color-text); }
 
 @media (max-width: 768px) {
   .app-screenshot { width: 200px; }
+}
+
+@media (min-width: 990px) and (max-width: 1150px) {
+  .app-screenshot { width: 210px; }
 }
 
 .phone-glow {
@@ -888,7 +896,7 @@ a.nav-logo:hover { color: var(--color-text); }
   .legal { padding: 120px 20px 64px; }
 }
 
-@media (prefers-reduced-motion: reduce) and (min-width: 960px) and (min-aspect-ratio: 3/2) {
+@media (prefers-reduced-motion: reduce) and (min-width: 990px) {
   .hero { overflow: hidden; align-items: flex-start; padding-top: 12vh; }
   .hero-photo,
   .hero-shade { position: absolute; }
