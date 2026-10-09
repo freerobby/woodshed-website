@@ -40,7 +40,7 @@ Defined as CSS variables at the top of `style.css`:
 
 ## App Store
 
-Download links use `https://apps.apple.com/app/id6760981537` (Woodshed, bundle id `com.woodshed`). The nav “Get the app” button, the hero badge, the closing section, and the footer all use that URL. Badge artwork is the official Apple file at `images/app-store-badge.svg` — do not redraw it.
+Download links use `https://apps.apple.com/app/id6760981537` (Woodshed, bundle id `com.woodshed`). The nav “Get the app” button, the closing section, and the footer all use that URL. Badge artwork is the official Apple file at `images/app-store-badge.svg` — do not redraw it.
 
 ---
 
