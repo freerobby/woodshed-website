@@ -54,11 +54,13 @@ recaptures which file (`.cursor/skills/marketing-site/SKILL.md` in
 |------|--------|----------------|
 | `practice.png` | Practice tab, idle record (hero) | Practice chrome, record button, tab bar, empty state |
 | `recording.png` | Practice while recording | Recording UI |
-| `write.png` | Write tab | Write list, best-take badges |
-| `idea.png` | Idea detail | Idea detail, takes, tags |
+| `write.png` | Write tab (room) | Write list, best-take badges |
+| `write-list.png` | Write tab ideas list (how it works) | Write list, before an idea is opened |
+| `idea.png` | Idea detail, opened from Write | Idea detail, takes, tags |
 | `session.png` | Session review | Segments, match chips, ratings |
 | `piece.png` | Piece detail | Piece stats, progress, session history |
 | `library.png` | Library | Library rows, filters, pieces vs ideas |
+| `library-listen.png` | Library listen sheet with matches | Search by playing, Piece and Idea rows |
 | `og.png` | Open Graph card (1200×630) | App icon or homepage tagline only |
 
 Hero and recording should be a quiet empty Practice. Weekly-goal chips
