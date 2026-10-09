@@ -237,33 +237,6 @@ a.nav-logo:hover { color: var(--color-text); }
   }
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(201, 136, 58, 0.12);
-  border: 1px solid rgba(201, 136, 58, 0.25);
-  border-radius: 100px;
-  padding: 6px 16px 6px 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--color-gold);
-  margin-bottom: 28px;
-}
-
-.hero-badge-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  animation: pulse 2.5s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.8); }
-}
-
 .hero-title {
   font-size: clamp(48px, 7vw, 80px);
   margin-bottom: 24px;
@@ -835,7 +808,6 @@ a.nav-logo:hover { color: var(--color-text); }
     text-align: center;
   }
 
-  .hero-badge { justify-content: center; }
   .hero-tagline {
     max-width: 100%;
     margin-left: auto;
@@ -846,8 +818,6 @@ a.nav-logo:hover { color: var(--color-text); }
   .room-practice h2 {
     font-size: clamp(20px, 6.2vw, 32px);
   }
-
-  .hero-visual { order: -1; }
 
   .rooms {
     grid-template-columns: 1fr;
