@@ -20,3 +20,15 @@ When you *are* in this repo:
 - Privacy copy lives in `privacy/index.html`. If the data story changes,
   update it in the same website PR as the homepage if both are affected.
 - Do not invent launch dates or platforms.
+
+## Cursor Cloud specific instructions
+
+Plain HTML and CSS. There is no package install, lint, test suite, or build.
+
+The environment start script serves the repo root on port 8000. If `http://127.0.0.1:8000/` already responds, leave that server running. Otherwise start it from the repo root:
+
+```bash
+python3 -m http.server 8000 --bind 0.0.0.0
+```
+
+Homepage: `http://127.0.0.1:8000/`. Privacy policy: `http://127.0.0.1:8000/privacy/`.
