@@ -147,7 +147,7 @@ a.nav-logo:hover { color: var(--color-text); }
 .hero {
   display: block;
   min-height: 0;
-  padding: 0 0 32px;
+  padding: 0 0 72px;
   position: relative;
   background: transparent;
 }
@@ -178,13 +178,23 @@ a.nav-logo:hover { color: var(--color-text); }
     #090909 100%);
 }
 
+/* Between the stacked phone layout and the fixed-photo laptop layout:
+   the photograph scrolls, and the pitch sits over its lower half. */
+@media (min-width: 769px) and (max-width: 989px) {
+  .hero {
+    padding-bottom: 320px;
+  }
+}
+
 /* From a laptop width up: the headline sits in the photograph, which
    stays put while the rest of the page scrolls over it. */
 @media (min-width: 990px) {
   .hero {
     display: flex;
     align-items: flex-start;
-    min-height: calc(100vw * 1008 / 1792);
+    /* Photo height, plus black space before the next section.
+       Less than the old full-viewport hero. */
+    min-height: calc(100vw * 1008 / 1792 + 360px);
     padding: 0;
     overflow: visible;
   }
@@ -835,7 +845,7 @@ a.nav-logo:hover { color: var(--color-text); }
     white-space: nowrap;
   }
 
-  .hero { padding-bottom: 24px; }
+  .hero { padding-bottom: 56px; }
 
   .hero-inner { padding: 0 20px; }
 
