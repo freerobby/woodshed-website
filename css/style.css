@@ -314,7 +314,7 @@ a.nav-logo:hover { color: var(--color-text); }
   font-size: 14px;
   color: var(--color-text-sec);
   line-height: 1.5;
-  max-width: 22ch;
+  max-width: 240px;
 }
 
 .screenshot-img {
@@ -585,7 +585,7 @@ a.nav-logo:hover { color: var(--color-text); }
     text-align: center;
   }
 
-  .shots figcaption { max-width: 28ch; }
+  .shots figcaption { max-width: 220px; }
 
   .screenshot-img { max-width: 220px; }
 

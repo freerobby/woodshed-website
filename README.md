@@ -34,6 +34,7 @@ Defined as CSS variables at the top of `style.css`:
 | `--color-gold`     | `#E8A84C` | Hover / highlight   |
 | `--color-text`     | `#F5F0E8` | Body copy           |
 | `--color-text-sec` | `#8A8A8A` | Secondary copy      |
+
 ---
 
 ## App Store
