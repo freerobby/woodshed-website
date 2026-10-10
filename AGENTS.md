@@ -13,10 +13,13 @@ When you *are* in this repo:
 - Keep Practice and Write as two rooms, one library. Do not split the
   product into two apps or two homepages.
 - Recapture Simulator PNGs in `images/` using the map in `README.md`. Keep
-  filenames. That step is **woodshed-mac only**. Linux app agents list stale
-  files in the app repo (`marketing/screenshots-stale.md`); they do not
-  capture. Hero/recording: empty Practice. Weekly-goal chips are opt-in;
-  reset the Simulator and pass `-WoodshedSkipOnboarding`.
+ filenames. Only screens shown on the homepage live here. That step is
+ **woodshed-mac only**. Linux app agents list stale files in the app repo
+ (`marketing/screenshots-stale.md`); they do not capture. `recording.png`
+ is a quiet Practice mid-recording. Weekly-goal chips are opt-in; reset the
+ Simulator and pass `-WoodshedSkipOnboarding`.
+- The homepage is one layout: a headline, a sentence or two, one phone per
+ beat. Add a new idea as another `.beat`, not a new layout system.
 - Privacy copy lives in `privacy/index.html`. If the data story changes,
   update it in the same website PR as the homepage if both are affected.
 - Do not invent launch dates or platforms.
