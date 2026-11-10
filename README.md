@@ -68,7 +68,8 @@ its `writeScreenshot` call in `TabSmokeTests.testCaptureMarketingScreenshots`.
 | `room.jpg` | Practice-room photograph (hero) | Hero | Never from the Simulator; this is artwork |
 | `recording.png` | Practice while recording | Practice, beat 1 | Recording UI, Practice chrome, tab bar |
 | `session.png` | Session review | Practice, beat 2 | Segments, match chips, ratings |
-| `piece.png` | Piece detail | Practice, beat 3 | Piece stats, progress, session history |
+| `log.png` | Practice log | Practice, beat 3 | Totals, weeks, pieces, months |
+| `piece.png` | Piece detail | Practice, beat 4 | Piece stats, progress, session history |
 | `idea.png` | Idea detail, opened from Write | Write | Idea detail, takes, tags |
 | `library.png` | Library | Library, beat 1 | Library rows, filters, pieces vs ideas |
 | `library-listen.png` | Library listen sheet with matches | Library, beat 2 | Search by playing, Piece and Idea rows |
